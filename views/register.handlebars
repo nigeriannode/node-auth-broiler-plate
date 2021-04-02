@@ -1,0 +1,62 @@
+      <div class="container">
+        <div class="jumbotron">
+           <div class="register" style="margin-top: 50px;">
+             {{>messages}}
+            <form action="/users/register" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+            <input
+              type="name"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="Enter Name"
+              value="{{#if name}}{{name}}{{/if}}"
+              />
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <label for="email">Email address:</label>
+                  <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Enter Email"
+                      value="{{#if email}}{{email}}{{/if}}"
+                    />
+                  </div>
+                  <br>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+              <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Create Password"
+              value="{{#if password}}{{password}}{{/if}}"
+            />                 
+                  <small  class="form-text text-muted">We'll never share your password with anyone else.</small>
+                </div>
+                <br>
+              
+                <div class="form-group">
+                  <label for="password2">Retype Password:</label>
+              <input
+              type="password"
+              id="password2"
+              name="password2"
+              class="form-control"
+              placeholder="Create Password"
+              value="{{#if password2}}{{password2}}{{/if}}"
+            />                  
+                  <small  class="form-text text-muted">Please enter your retype your password</small>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-dark">Register</button>
+              </form>
+              <p class="lead mt-4 display-5">Have An Account? <a href="/users/login" class="btn btn-dark">Login</a></p>
+           </div>
+            </div>
+            </div>

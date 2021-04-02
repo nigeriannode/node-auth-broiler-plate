@@ -1,0 +1,62 @@
+
+      <br>
+      <br>
+      <div class="container">
+        <div class="jumbotron">
+            {{>messages}}
+            <form action="/users/login" method="POST">
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="email">Email address: </label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder='Enter Email'/>
+                  
+                </div>
+              
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="password">Password: </label>
+                    <input type="password" id="password" name='password' class="form-control" placeholder='Enter Password' />
+                  
+                </div>
+              
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                  <div class="col d-flex justify-content-center">
+                    <!-- Checkbox -->
+                    <div class="form-check">
+                    </div>
+                  </div>
+              
+                  
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-dark btn-block mb-4"><a href="/users/login" style="text-decoration: none;" class="text-white">Sign in</a></button>
+              
+                <!-- Register buttons -->
+                <div class="text-center lead">
+                  <p>Not a member? <a href="/users/register" class="text-dark">Register</a></p>
+                  <p class="display-3"> or sign in with </p>
+                  </p>
+                  
+                  <button type="button" class="btn btn-floating mx-1" style="color: #00acee;">
+                    <i class="fab fa-twitter display-1"></i>
+                  </button>
+              
+                  <button type="button" class="btn btn-floating mx-1" style="color: #3b5998;">
+                    <i class="fab fa-facebook display-1"></i>
+                  </button>
+              
+                  <button type="button" class="btn btn-floating mx-1" style="color: #bb3d52;">
+                    <i class="fab fa-instagram display-1"></i>
+                  </button>
+              
+                  <button type="button" class="btn btn-floating mx-1"  style="color: #3c4250;">
+                    <i class="fab fa-github display-1"></i>
+                  </button>
+                </div>
+              </form>
+            
+            
+
+          </div>
+      </div>
+    <!-- Optional JavaScript; choose one of the two! -->
